@@ -1,0 +1,11 @@
+spec:
+  name: relay-server
+  services:
+  - dockerfile_path: Dockerfile
+    git:
+      branch: main
+      repo_clone_url: https://github.com/tmpfs/hole-punch.git
+    name: relay-server
+    http_port: 4001
+    instance_count: 1
+    instance_size_slug: basic-xxs
